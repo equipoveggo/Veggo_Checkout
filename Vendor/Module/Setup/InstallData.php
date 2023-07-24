@@ -38,7 +38,7 @@ class InstallData implements InstallDataInterface
             $installer->getTable('quote'),
             'agree',
             [
-                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_BOOLEAN,
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 'visible'  => true,
                 'default' => 0,
                 'comment' => 'Custom Condition'
@@ -50,7 +50,7 @@ class InstallData implements InstallDataInterface
             $installer->getTable('sales_order'),
             'agree',
             [
-                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_BOOLEAN,
+                'type' => \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 'visible'  => true,
                 'default' => 0,
                 'comment' => 'Custom Condition'
